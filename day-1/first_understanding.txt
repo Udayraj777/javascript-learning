@@ -1,0 +1,7 @@
+i understand that any file can be code 
+compiler and interpreter are the main written software that give that written text or code meaning 
+they allow only their certain type of file for example python interpreter will allow only .py 
+i think these software (compiler or interpreter ) has their keyword like print that tell computer to print something on screen .
+thats why we have different language because we have different usecase low level programming we have compiler performance and flexibility of usecase is reason we have different programming language.
+now for javascript this running engine is in browser for many years but node js is the interpreter or js runtime  that make javascript run on any machine. 
+we can build any tool with javascript 
