@@ -1,0 +1,23 @@
+to process anything in machine we need to store the information for that every programming language gives us variables.
+now in javascript we have three way to store information :
+var 
+let
+const
+like we can store any information in javascript 
+var name="uday"
+let name="uday"
+const name="uday"
+
+now const once we assign any value we cant change it
+var has scope problem like var variable are global variable they can be changed from anywhere so it is not recommend to use var 
+let i dont know about let why it is introduced i know it is introduced to remove scope problem but what it did .
+yeah here is the example:
+for (var i = 0; i < 3; i++) {
+    // loop
+}
+console.log(i); // prints 3 - var leaked out
+
+for (let j = 0; j < 3; j++) {
+    // loop
+}
+console.log(j); // Error - let stayed inside loop
