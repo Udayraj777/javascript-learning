@@ -1,0 +1,10 @@
+ ok first i got to know that their is many version of javascript new version contain classes object.
+we need to add "use strict" to tell everyone i am using new javascript features
+
+we cant use alert function in nodejs as this can only run in browser
+
+we have to make code more readable 
+
+these are basic stuff now we will move toward datatype
+
+

@@ -1,0 +1,14 @@
+their are premitive datatype:
+
+number which has some range 
+bigint used for big value
+string
+boolean
+null=>standalone value
+undefined=>when nothing is assigned
+symbol=>to find uniqueness of component
+
+
+we can use type of to find type of variable
+
+null has object type that can be said a shortcomming of javascript
