@@ -1,0 +1,14 @@
+in comparison we have two type of comparison in javascript == and <,>,<=,>=
+these are different type of comparison
+
+simple number comparison is easy
+5==6
+5<6
+
+problem is when there is different type included 
+
+"5"<6 where 5 is string and 6 is number
+
+comparison <,> and etc convert null to number that is 0 while equalit not that why null>=0 is true and null ==0 is false
+
+"===" this check the datatype of the comparison it shouldnt be same
