@@ -1,0 +1,15 @@
+now we can get the value from anywhere and we dont know the type of that value
+we use typeof variable to get the type of variable 
+
+now we want to convert that value in some preferred type like number 
+we use assign class 
+for ex Numberage= Number(age);
+remember we use capital firstletter in datatype for convertion 
+
+now we can convert any value in any type for example if it is not convertible it will convert to that type its value will be NaN
+for ex if age="33n" numAge= Number(age);
+numAge type is number but value will be NaN 
+null when convert to number will be 0
+false boolean value when convert to number will be 0 
+and true will be 1 vise versa also true for booleans
+any string with some character will be Number converted to NaN and any empty string will be converted to 0
