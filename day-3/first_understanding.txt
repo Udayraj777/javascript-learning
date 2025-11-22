@@ -1,0 +1,18 @@
+operations 
+
+we have basic maths operation in javascipt 
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2**2);
+console.log(2%2);
+
+but there are some operation like 
+where we adding number to string and string to number whatever addittion we do where ever string start it will treat like string 
+for ex 3+2+"2"=52
+"2"+3+4=234
+
+there is precedence operator and post increment operator are presen +true will be 1 
++false will be 0
+similarly +"" will be 0 
