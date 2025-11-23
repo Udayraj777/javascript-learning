@@ -1,0 +1,15 @@
+we start with summary of datatype in javascript
+datatype in javascript is divided in two type 
+primitive
+non primitive
+primitive ones : String, Number,undefined ,null ,bigint ,symbol ,boolean
+non-primitive:Array,Object,Function
+
+we already know few datatype only symbol and bigint left 
+
+symbol used for make the variable unique 
+big int is used for using big integers value 
+
+object is anything in javascript which is inside curly braces 
+
+we already know array and function 
