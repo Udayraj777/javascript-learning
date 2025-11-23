@@ -1,0 +1,8 @@
+stack and heap memory in javascript how memory store and update
+
+stack(primitive datatype)
+heap(non primitive datatype)
+
+stack -if we assign some variable to another variable new copy of the info is assign to to that variable previous variable info is not changed if we change in assign copy
+
+heap - assign value in variable then that variable point to that value in heap if we equal created variable to new variable then that new variable also point that value in heap so if we change any variable that change is visible in every equal assignment
