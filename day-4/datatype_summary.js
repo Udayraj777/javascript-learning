@@ -15,3 +15,17 @@ console.log(typeof a);
 const bign = 23764896324898764n
 
 console.log(typeof bign);
+
+// for non primitive 
+
+// array
+let heroes=["thor","ironman","hulk"]
+// object
+let myObj={
+    name:"Uday",
+    age:24
+}
+// function
+let myFunc = function (){
+    console.log("Hello World")
+}
