@@ -1,0 +1,20 @@
+first we are working on string today  
+string is collection of characters 
+
+in javascript we can declare string simply writing characters inside double or single quotes
+
+ex name="uday"
+
+we concatenate strings with simple + sign 
+
+"uday"+"raj"="udayraj"
+
+we are not going to use this method to concatenate string we going to use `` backtick method 
+
+inside backtick i can insert any variable with string operation inside it 
+
+ex=`my name is ${name} and i work in school`
+
+we can do any operation also like 
+ex=`my name is ${name.toUpperCase} and i work in school`
+

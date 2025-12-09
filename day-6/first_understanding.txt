@@ -1,0 +1,3 @@
+i got to know we can declare string in new way class method
+
+:const gameName = new String('URMishra')
