@@ -1,0 +1,15 @@
+i got to know that we can also declare number datatype explicitly 
+with help of new Number(100.2332)
+
+this when we declare in browser console we get to see the property and conversion we can do on numbers 
+
+we can convert it to string with toString()
+we can use toFixed to fix the number of value after decimal 
+when we use toFixed the number get converted to string we have to remember this 
+
+then we understand  about the toPrecision(3) this will give only 3 value with approximations 
+ex =123.899
+when we use toPrecision(4)we get approx result 123.9
+
+similar some times we can convert big number into money so we can read it easily 
+with the help of toLocalString('en-us')->to convert it into million number system
