@@ -1,8 +1,8 @@
 // singleton - when we make object with constructor object is singleton it is of only one kind
 
-// object literals-method of declaring objects
-const symbol=Symbol('sym1')
 
+const symbol=Symbol('sym1')
+// object literals-method of declaring objects
 const jsUser={
     name:"Uday",
     age:24,
