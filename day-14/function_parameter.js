@@ -32,6 +32,7 @@ const user={
 }
 
 function handleObject(anyobject){
+    // we have to sometime check type safety with if else thats why developer love typescript
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
