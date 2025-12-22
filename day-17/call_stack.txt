@@ -1,0 +1,4 @@
+global execution context will be already in stack 
+
+once function is called it enter stack executed then leave the stack
+but when we call different function inside other like we call two() function inside one() then one will go under then two will be above it first two will execute and then one lifo concept is followed

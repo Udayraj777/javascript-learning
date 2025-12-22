@@ -1,0 +1,47 @@
+javascript execution context has global execution context which is in this which is different for browser and server in nodejs it is empty and in browser we have window as global object
+their is also function execution context 
+their is eval execution context 
+
+how the javascript code execute?
+code executed in two phases 
+1.memory creation phase
+2.execution phase
+
+--code--
+let val1=1
+let val2=2
+function addNum(num1,num2){
+    let total=num1+num2
+    return total
+}
+let result1=addNum(val1,val2)
+let result2=addNum(10,2)
+
+
+how would this code will execute->
+
+1.first global execution context created and given to this
+2.memory phase -collect all the variable 
+val1-undefined
+val2-undefined
+addNum-definition
+result1-undefined
+result2-undefined
+
+3.execution phase-assign value to memory
+val1-10
+val2-5
+addNUm already difine function definition in memory phase so their will be no execution for it
+move on to result have addnum this addnum will create itself different execution context then repeat everything memory phase and execution phase
+memory phase
+num1-undefined
+num2-undefined 
+total-undefined
+then execution phase 
+num1-10
+num2-5
+total-15 this will return to global execution context
+after returning this new context will be deleted
+
+when we move to result2 then new sandbox will be created same this will repeat 
+
