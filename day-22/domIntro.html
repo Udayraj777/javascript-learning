@@ -1,0 +1,32 @@
+<!-- // for any webpage we can create a dom tree 
+// starting from window than their child html 
+// then html has two part head and body
+// head have some meta tag with some attribute and textnode
+// body have different div inside all arrange according to child and parent relationship
+// when in browser when we did console.dir(document) then we will get object with many fields
+// we can get access to anything like baseuri ,links in different form in HTMLCollection,nodecollection some array
+// like if some element id is firstheading and we want to access it modify it 
+// we use document.getElementById('firstheading')
+// we get back the element 
+// if we want to modify it document.getElementById('firstheading').innerHTML='<h1>uday</h1>'
+// this will replace that element of html with the inserted element
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+</head>
+<style>
+    .bg-black{
+        background-color: #212121;
+        color: #ffff;
+    }
+</style>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="'heading">DOM learning </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae neque dolorem temporibus suscipit ipsa eaque, id possimus in amet error commodi numquam dicta! Nulla eos quisquam eligendi vero placeat!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learning on my laptop</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde, impedit molestias ratione quibusdam laudantium minus sint quis modi ex? Dolorum totam debitis corrupti non minima autem itaque quae tempora!</p>
+    </div>
+</body>
+</html>
+
+<!-- we go in console and use different methods
+ 
+1.getElementById 
+ it take parameters to target the element with id or className
+ we get the element we can save it in variable and do operation on that element
+ 
+ 2. with '.' we can get different info with .id ,.className or we can use another method '.getAttribute('NameOfAttribute')' 
+ and their is setAttribute to set value of some attribute ex .setAttribute('class','new-value') it written undefined but it set the new value you can confirm in console
+ 
+ 3.we can change the style of the element with .style.anything you want to change for example backgroundColor,borderRadius,padding>
+ 
+ 4.to access the content in tag we have different access function
+ .textContent 
+ .innerHTML
+ .innerText
+ difference btw innerText and textContent
+ innerText gives us only text that is visible
+ textContent give us hidden text by css property
+ innerHtml give back all the html between the text 
+
+ 5.getElementsByClassName('NameofClass')
+ give back html collection of element
+ 
+ 6.document.querySelector('h1') give the first h1 from the page
+ for id -('#id')
+ for class-('.class')
+ for input-('input[type='password']')
+ everything work according to css selector
+save it in variable and do privous styling changes
+
+7.querySelectorAll('li') give back nodelist we save it in some variable 
+nodelist and htmlcollection seem like array but it didnt we have to check prototype for what kind of operation it allows
+for example in nodelist -templist variable
+templist[0].style.color='green'
+nodelist allow foreach
+templist.forEach(function (li){
+li.style.backgroundColor='green'
+})
+
+8.document.getElementByClassName('list-item') we get html collection
+their no loop prototype 
+so we have to convert it into array
+Array.from(tempClassList)
+now my taking it in variable we can use diffeerent function available in array such as forEach 
