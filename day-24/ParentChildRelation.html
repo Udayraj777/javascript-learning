@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121;color: #ffff;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children)
+    // console.log(parent.children[0].innerHTML)
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // similarly we can move from child to parent 
+    const dayone=document.querySelector('.day');
+    // now queryselector is the expensive operation it traverse full tree
+    // // as we already know dayone we can use it for further traversals
+    // console.log(dayone)
+    // console.log(dayone.parentElement);
+    // console.log(dayone.nextElementSibling)
+   
+    // we can understand the complexity of web with the help of this command 
+    console.log('NODES: ',parent.childNodes)
+
+
+</script>
+</html>
