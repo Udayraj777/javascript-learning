@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // onclick directly on button is not scalable in html it work in react only just because it is the library of javascript 
+
+    // document.getElementById('owl').onclick=function(){
+    //     alert('owl clicked')
+    // }
+    // this is not the best approach because of limited features of onclick we should use eventlisteners 
+
+    // document.getElementById('owl').addEventListener('click',function(e){//this e mean event object we have to understand this in detail
+    //     // some important event are:
+    //     // type,timestamp,defaultPrevented,target,toElement,srcElement,currentTarget,clientX,clientY,screenX,screenY,altkey,ctrlkey,shiftkey,keycode
+    //     alert('owl clicked again')
+    // },false)//false is default value so thats why we not write it sometimes this is event propogation parameter
+    
+    //event propogation used for event bubbling(false) and event capturing(true)
+    // // here is the example
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl click");
+    //     e.stopPropagation()//this prevent event to bubble up and isolate the event from chain
+    // },false)
+
+    // as the two event is attached owl is inside ul 
+    // so for false(bubbling) it goes from down to up or you can say inside to outside 
+    // and for true capturing then clicked inside ul will come first and owl click next 
+
+    // sometime we dont want some default behaviour like in form or some links
+    // we use preventDefault
+    // document.getElementById('google').addEventListener
+    // ('click',function(e){
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // },false)
+
+
+    // lets write a code when we click the image and it disssapear
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        console.log(e.target.tagName);//because we can sometime click Li
+        if(e.target.tagName==='IMG'){
+        let removeit=e.target.parentNode
+        // removeit.remove() this remove method is kind of new
+        removeit.parentNode.removeChild(removeit)
+        }
+        
+    },false)
+</script>
+</html>

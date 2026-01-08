@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am coding</h1>
+    <button id="change">stop</button>
+</body>
+<script>
+   const button =document.querySelector('#change')
+   console.log(button)
+   const setTime=setTimeout(function(){
+        document.querySelector('h1').innerHTML="i am going to be great software engineer"
+    },2000)
+   button.addEventListener('click',function(e){
+    clearTimeout(setTime);
+    console.log('setTimeout stopped')
+   })
+
+</script>
+</html>
