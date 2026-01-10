@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <table>
+    <tr>
+        <th>value</th>
+        <th>State</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>UNSENT</td>
+        <td>Client has been created. open() not called yet.</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>OPENED</td>
+        <td>open() has been called.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HEADERS_RECEIVED</td>	
+        <td>send() has been called, and headers and status are available.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>LOADING</td>	
+        <td>Downloading; responseText holds partial data.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>DONE</td>	
+        <td>The operation is complete.</td>
+    </tr>
+    </table>
+    <script>
+        // for api request from xml we had to first create a object 
+        const xhr=new XMLHttpRequest()
+        // then we open the request
+        const requestUrl="https://api.github.com/users/Udayraj777"
+        xhr.open('GET',requestUrl);
+        // console.log(xhr.readyState);
+        // we can print the state in console it will show the state of request but it not continuously monitor 
+        // to continuous monitor request we use onreadystatechange
+        xhr.onreadystatechange=function(){
+            console.log(xhr.readyState);
+            if(xhr.readyState===4){
+                // const data=this.responseText;
+                // console.log(typeof data);//this is string to access api property we have to convert string into object JSON
+                const data =JSON.parse(this.response);
+                console.log(typeof data);
+                console.log(`followers:${data.followers}`);
+
+            }
+        }
+        xhr.send()
+        // console.log(xhr.readyState)
+
+        // we also learn console.log is not the part of javascript it is written in v8 for debugging in javascript 
+        // it is written in c++
+    </script>
+</body>
+</html>
+
